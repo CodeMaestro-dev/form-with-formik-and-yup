@@ -1,0 +1,16 @@
+.inputDiv {
+    
+  & > .input {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 15px;
+    width: 340px;
+    background-color: #333333;
+  }
+
+  & > .input:focus {
+    color: black;
+    background-color: grey;
+  }
+}

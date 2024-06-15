@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainDiv {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+  & > .toast {
+    position: absolute;
+    top: -150px;
+    right: 20px;
+    border-radius: 12px;
+    background-color: #242C32;
+    padding-block: 34px;
+    padding-inline: 16px;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+
+    & > img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      box-shadow: 0px 0px 18px #00ED51;
+    }
+
+    & > div {
+      & > #toastHeading {
+        color: white;
+        font-size: 17px;
+        margin-block-end: 10px;
+      }
+
+      & > #toastDetails {
+        color: #C8C5C5;
+        font-size: 13px;
+      }
+    }
+  }
+
+  & > div {
+    margin-top: 180px;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & > input {
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 18px 15px;
+        width: 340px;
+        background-color: #333333;
+        color: white;
+        width: 100%;
+      }
+    }
+  }
+}
+
+#error {
+  font-size: 18 px;
+  color: rgb(235, 37, 37);
+}
