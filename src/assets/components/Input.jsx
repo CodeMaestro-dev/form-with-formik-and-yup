@@ -36,4 +36,5 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   name: PropTypes.string,
   required: PropTypes.string,
+  onChange: PropTypes.any,
 };
